@@ -1,3 +1,3 @@
-# member-mallory-landing-page
+# Landing Page
 
-My landing page.
+My landing page demo from the Odin Project.
