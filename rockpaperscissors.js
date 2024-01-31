@@ -1,8 +1,9 @@
 //variable initialized to hold value of the getComputerChoice function
 let computerChoice;
-//A function that will randomly return either 'Rock', 'Paper', or 'Scissors' - use Math.random() that generates a number between 0 and 1
+//variable to hold the result of each round of play
 let result;
 
+//A function that will randomly return either 'Rock', 'Paper', or 'Scissors' - use Math.random() that generates a number between 0 and 1
 function getComputerChoice() {
   const randomNumber = Math.random();
 
@@ -14,9 +15,10 @@ function getComputerChoice() {
     return "Scissors";
   }
 }
-
+//set to the value of the randomizing function to use as computer's choice
 computerChoice = getComputerChoice();
 
+//plays a single round of the game and returns the winner or a tie
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
   computerSelection = computerSelection.toLowerCase();
@@ -30,12 +32,13 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissors" && computerSelection === "paper")
   ) {
-    return "You win!";
+    return `You win! ${playerSelection} beats ${computerSelection}!`;
   } else {
-    return "You lose!";
+    return `You lose! ${computerSelection} beats ${playerSelection}!`;
   }
 }
 
+//starts a game and calculates the score to a minimum of five rounds
 function playGame() {
   let playerScore = 0;
   let computerScore = 0;
@@ -64,4 +67,5 @@ function playGame() {
     console.log("It's a tie! Try again!");
   }
 }
+
 playGame();
