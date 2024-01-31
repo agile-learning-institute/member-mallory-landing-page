@@ -1,3 +1,5 @@
+//options for the computer to select
+let possibleChoices = ["rock", "paper", "scissors"];
 //variable initialized to hold value of the getComputerChoice function
 let computerChoice;
 //variable to hold the result of each round of play
@@ -5,16 +7,18 @@ let result;
 
 //A function that will randomly return either 'Rock', 'Paper', or 'Scissors' - use Math.random() that generates a number between 0 and 1
 function getComputerChoice() {
-  const randomNumber = Math.random();
+  const randomNumber = Math.floor(Math.random() * possibleChoices.length);
+  return possibleChoices[randomNumber];
 
-  if (randomNumber < 0.33) {
-    return "Rock";
-  } else if (randomNumber > 0.33 && randomNumber < 0.67) {
-    return "Paper";
-  } else {
-    return "Scissors";
-  }
+  // if (randomNumber < 0.33) {
+  //   return "Rock";
+  // } else if (randomNumber > 0.33 && randomNumber < 0.67) {
+  //   return "Paper";
+  // } else {
+  //   return "Scissors";
+  // }
 }
+
 //set to the value of the randomizing function to use as computer's choice
 computerChoice = getComputerChoice();
 
