@@ -1,4 +1,4 @@
-let possibleChoices = ["rock", "paper", "scissors"];
+let possibleChoices = ["Rock", "Paper", "Scissors"];
 let result;
 let outcome = document.querySelector("#outcome");
 let player = document.querySelector("#player");
@@ -8,18 +8,18 @@ const score = document.querySelector('#score');
 
 outcome.style.cssText = ('padding: 50px; text-align: center;');
 score.style.cssText = ('padding: 50px; text-align: center;');
-buttons.style.cssText = "padding: 50px; text-align: center;"
+buttons.style.cssText = "padding: 50px; text-align: center;";
 
 const rock = document.createElement('button');
-rock.textContent = 'rock';
+rock.textContent = 'Rock';
 buttons.appendChild(rock);
 
 const paper = document.createElement('button');
-paper.textContent = 'paper';
+paper.textContent = 'Paper';
 buttons.appendChild(paper);
 
 const scissors = document.createElement('button');
-scissors.textContent = 'scissors';
+scissors.textContent = 'Scissors';
 buttons.appendChild(scissors);
 
 const eachButton = document.querySelector('.eachButton');
@@ -42,9 +42,9 @@ function playRound(e) {
   if (playerSelection === computerChoice) {
     outcome.textContent = "It's a tie!";
   } else if (
-    (playerSelection === "rock" && computerChoice === "scissors") ||
-    (playerSelection === "paper" && computerChoice === "rock") ||
-    (playerSelection === "scissors" && computerChoice === "paper")
+    (playerSelection === "Rock" && computerChoice === "Scissors") ||
+    (playerSelection === "Paper" && computerChoice === "Rock") ||
+    (playerSelection === "Scissors" && computerChoice === "Paper")
   ) {
     outcome.textContent = `You win! ${playerSelection} beats ${computerChoice}!`;
     playerScore++;
@@ -59,17 +59,17 @@ function playRound(e) {
 }
 
 rock.addEventListener('click', () => {
-  let playerSelection = 'rock';
+  let playerSelection = 'Rock';
   playRound(playerSelection);
 });
 
 paper.addEventListener('click', () => {
-  let playerSelection = 'paper';
+  let playerSelection = 'Paper';
   playRound(playerSelection);
 });
 
 scissors.addEventListener('click', () => {
-  let playerSelection = 'scissors';
+  let playerSelection = 'Scissors';
   playRound(playerSelection);
 });
 

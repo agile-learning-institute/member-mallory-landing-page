@@ -31,6 +31,11 @@
   display: flex;
 }
 
+a {
+  list-style-type: none;
+  color: white;
+}
+
 #nav-links li {
   padding: 14px 16px;
 }
