@@ -65,21 +65,20 @@ function makeGrid() {
   draw();
 }
 
-
+//function allows the user to "draw" on the UI; eventListener added to each column created w/ for loop
 function draw() {
   let columns = document.getElementsByClassName("column");
 
   for (let i = 0; i < columns.length; i++) {
     columns[i].addEventListener("mouseover", changeColor);
-    
   }
 
-function changeColor() {
+  function changeColor() {
     let blackRadio = document.querySelector("#black-pen");
     let redRadio = document.querySelector("#red-pen");
     let blueRadio = document.querySelector("#blue-pen");
     let rainbow = document.querySelector("#rainbow-pen");
-    let eraserRadio = document.querySelector('#eraser');
+    let eraserRadio = document.querySelector("#eraser");
 
     if (blackRadio.checked) {
       this.style.backgroundColor = "#2e2b2b";
@@ -88,15 +87,14 @@ function changeColor() {
     } else if (blueRadio.checked) {
       this.style.backgroundColor = "#3f33dd";
     } else if (eraserRadio.checked) {
-        this.style.backgroundColor = "";
+      this.style.backgroundColor = "";
     } else if (rainbow.checked) {
       //pick a value from complete black to complete white at random; to string to achieve a hex code
       let randomColor = Math.floor(Math.random() * 16777215).toString(16);
       this.style.backgroundColor = "#" + randomColor;
     }
   }
-};
-
+}
 
 function clearGrid() {
   let columns = document.getElementsByClassName("column");
