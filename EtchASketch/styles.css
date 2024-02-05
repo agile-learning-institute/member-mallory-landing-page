@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Honk&family=Oswald:wght@200..700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Exo;
+  background: linear-gradient(#f3f1f1, #b8b5b5);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.animate-character {
+  text-transform: uppercase;
+  font-family: Honk, sans-serif;
+  font-size: 50px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Oswald, sans-serif;
+}
+
+/* form p {
+  padding: 0;
+  margin: 0;
+} */
+
+#buttons {
+  display: flex;
+}
+
+#clear-button {
+  margin-left: 10px;
+}
+
+.canvas {
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+}
+
+#grid-container {
+  margin-top: 10px;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 15px solid palegreen;
+  border-radius: 15px;
+}
+
+.row {
+  /* border: 1px solid white; */
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  border: 1px solid white;
+  display: flex;
+  flex: 1;
+}
+
+/* .column-black {
+  border: 1px solid rgb(26, 25, 25);
+  background-color: rgb(45, 43, 43);
+  flex: 1;
+}
+
+.column-red {
+  border: 1px solid rgb(97, 71, 71);
+  background-color: rgb(218, 45, 45);
+  flex: 1;
+}
+
+.column-blue {
+  border: 1px solid rgb(67, 62, 87);
+  background-color: rgb(63, 51, 221);
+  flex: 1;
+} */
