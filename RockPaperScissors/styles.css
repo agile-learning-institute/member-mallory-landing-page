@@ -1,0 +1,23 @@
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+#outcome {
+    font-size: 2rem;
+}

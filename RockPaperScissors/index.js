@@ -6,20 +6,23 @@ let computer = document.querySelector("#computer");
 const buttons =document.querySelector('#buttons');
 const score = document.querySelector('#score');
 
-outcome.style.cssText = ('padding: 50px; text-align: center;');
-score.style.cssText = ('padding: 50px; text-align: center;');
-buttons.style.cssText = "padding: 50px; text-align: center;";
+outcome.style.cssText = ('padding: 30px; text-align: center;');
+score.style.cssText = ('padding: 30px; text-align: center;');
+buttons.style.cssText = "padding: 30px; text-align: center;";
 
 const rock = document.createElement('button');
-rock.textContent = 'Rock';
+rock.textContent = '✊';
+rock.style.cssText = ('font-size: 5rem;');
 buttons.appendChild(rock);
 
 const paper = document.createElement('button');
-paper.textContent = 'Paper';
+paper.textContent = '✋';
+paper.style.cssText = ('font-size: 5rem;')
 buttons.appendChild(paper);
 
 const scissors = document.createElement('button');
-scissors.textContent = 'Scissors';
+scissors.textContent = '✌️';
+scissors.style.cssText = ('font-size: 5rem;')
 buttons.appendChild(scissors);
 
 const eachButton = document.querySelector('.eachButton');
