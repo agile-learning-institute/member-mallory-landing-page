@@ -6,14 +6,14 @@ class Calculator {
   }
 
   clear() {
-    this.currentOperand = "";
     this.previousOperand = "";
+    this.currentOperand = "";
     this.operation = undefined;
   }
 
   delete() {
     this.currentOperand = this.currentOperand.toString().slice(0, -1);
-    }
+  }
 
   appendNumber(number) {
     if (number === "." && this.currentOperand.includes(".")) return;
@@ -61,9 +61,7 @@ class Calculator {
   }
 
   updateDisplay() {
-    this.currentOperandTextElement.innerText = this.getDisplayNumber(
-      this.currentOperand
-    )
+    this.currentOperandTextElement.innerText = this.currentOperand;
 
     if (this.operation != null) {
       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
