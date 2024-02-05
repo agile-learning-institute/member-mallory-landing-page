@@ -13,34 +13,34 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-};
+}
 
 .animate-character {
   text-transform: uppercase;
   font-family: Honk, sans-serif;
   font-size: 50px;
-};
+}
 
 #header {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Oswald, sans-serif;
-};
+}
 
 #buttons {
   display: flex;
-};
+}
 
 #clear-button {
   margin-left: 10px;
-};
+}
 
 .canvas {
   display: flex;
   align-items: center;
   flex-direction: center;
-};
+}
 
 #grid-container {
   margin-top: 10px;
@@ -50,16 +50,16 @@ body {
   flex-direction: column;
   border: 15px solid palegreen;
   border-radius: 15px;
-};
+}
 
 .row {
   display: flex;
   flex: 1;
-};
+}
 
 .column {
   border: 1px solid white;
   display: flex;
   flex: 1;
-};
+}
 
